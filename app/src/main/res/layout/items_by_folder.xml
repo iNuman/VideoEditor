@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.numan.videoeditor.custom_views.ScaleCardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="4.0dip"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginRight="4.0dip"
+    android:layout_marginBottom="2.0dip"
+    app:cardBackgroundColor="@color/card_color"
+    app:cardCornerRadius="2.0dip"
+    app:cardElevation="4.0dip">
+
+    <ImageView
+        android:contentDescription="@string/image_view"
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card_transparent"
+        android:clickable="true"
+        android:scaleType="centerCrop" />
+
+    <CheckBox
+        android:id="@+id/cbSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/imageView1"
+        android:background="@drawable/bg_selection"
+        android:button="@null"
+        android:checked="false" />
+
+    <View
+        android:id="@id/clickableView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card_transparent"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/below_shadow"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:text="@string/album"
+        android:textColor="@android:color/white"
+        android:textSize="16.0sp" />
+</com.numan.videoeditor.custom_views.ScaleCardLayout>

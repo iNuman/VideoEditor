@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.numan.videoeditor.custom_views.ScaleCardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlMainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4.0dip"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginRight="4.0dip"
+    android:layout_marginBottom="2.0dip"
+    app:cardBackgroundColor="@color/card_color"
+    app:cardCornerRadius="2.0dip"
+    app:cardElevation="4.0dip">
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card_transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/image_thumb"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/clickableView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card_transparent"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <ImageView
+        android:id="@+id/ivRemove"
+        android:layout_width="26.0dip"
+        android:layout_height="26.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|center|top"
+        android:layout_marginTop="3.0dip"
+        android:layout_marginEnd="3.0dip"
+        android:contentDescription="@string/remove_selected_image"
+        android:src="@drawable/ic_removeimage" />
+</com.numan.videoeditor.custom_views.ScaleCardLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Video Editor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="add_dialog_title_dialog">Not Decided Yet!</string>
+    <string name="banner_imageview">Banner ImageView</string>
+    <string name="setting_imageview">Setting ImageView</string>
+    <string name="app_name_here">It\'s Working</string>
+    <string name="editor_image_view">Editor Image View</string>
+    <string name="editor">Editor</string>
+    <string name="trim">Trim</string>
+    <string name="studio">Studio</string>
+    <string name="will_decide_later">Will decide Later</string>
+    <string name="material">Material</string>
+    <string name="camera">Camera</string>
+    <string name="decide">Decide</string>
+    <string name="back_imageview">Back ImageView</string>
+    <string name="images_not_selected_yet">Images not selected yet</string>
+    <string name="selected_image_list">Selected Image List</string>
+    <string name="_1">(1)</string>
+    <string name="remove_selected_image">Remove Selected Image</string>
+    <string name="image_thumb">Image Thumb</string>
+    <string name="album">Album</string>
+    <string name="image_view">Image View</string>
+    <string name="choose_photos">Choose Photos</string>
+</resources>

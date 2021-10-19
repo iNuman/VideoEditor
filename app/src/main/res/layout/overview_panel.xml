@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.numan.videoeditor.custom_views.VerticalSlidingPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layouts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:dragView="@+id/settings_pane_header"
+    app:overlay="false"
+    app:panelHeight="140.0dip"
+    app:shadowHeight="4.0dip">
+
+    <LinearLayout
+        android:id="@+id/default_home_screen_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.0"
+            app:cardBackgroundColor="#20242e"
+            app:cardElevation="4.0dip">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAlbum"
+                tools:listitem="@layout/items_by_folder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/dark_bg">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImageAlbum"
+                tools:listitem="@layout/items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="6.0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/stack_drop_shadow_left" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/settings_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:background="@color/colorMatteBlack"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/settings_pane_header"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSelectedList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/selected_image_list"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+
+                <com.numan.videoeditor.custom_views.ExpandIconView
+                    android:id="@+id/settings_drag_arrow"
+                    android:layout_width="40.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:id="@+id/tvImageCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/settings_drag_arrow"
+                    android:text="@string/_1"
+                    android:textColor="@android:color/white" />
+            <ImageView
+                android:id="@+id/delete_iv"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_delete"
+                android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <com.numan.videoeditor.custom_views.EmptyRecyclerView
+                android:id="@+id/rvSelectedImagesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/settings_pane_header"
+                tools:listitem="@layout/grid_selected_item" />
+
+            <LinearLayout
+                android:id="@+id/list_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/settings_pane_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/images_not_selected_yet"
+                    android:textColor="@color/white"
+                    app:drawableTopCompat="@drawable/ic_noimageselected" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="6.0dip"
+                android:layout_below="@+id/settings_pane_header"
+                android:contentDescription="@string/image_view"
+                android:src="@drawable/stack_drop_shadow" />
+        </RelativeLayout>
+    </FrameLayout>
+</com.numan.videoeditor.custom_views.VerticalSlidingPanel>

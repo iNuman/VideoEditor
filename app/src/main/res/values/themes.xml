@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VideoEditor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/md_blue_A400</item>
+        <item name="colorSecondaryVariant">@color/md_blue_A700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style parent="Widget.MaterialComponents.TextView" name="TextViewStyle">
+    <item name="android:textColor">@android:color/white</item></style>
+
+    <style parent="ThemeOverlay.MaterialComponents.Dialog.Alert" name="AlertDialogTheme">
+    <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item></style>
+
+    <style parent="Widget.MaterialComponents.Button.TextButton.Dialog" name="NegativeButtonStyle">
+    <item name="android:textColor">@color/colorAccent</item></style>
+
+    <style parent="Widget.MaterialComponents.Button.TextButton.Dialog" name="PositiveButtonStyle">
+    <item name="android:textColor">@color/colorAccent</item></style>
+
+
+    <style name="MyTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+    <!-- Don't Touch My Phone -->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="MyAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/question_color</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#000000</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <color name="question_color">#3F51B5</color>
+</resources>

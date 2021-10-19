@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#E5151515</color> // Erie Black
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#ff000000</color>
+    <color name="colorPrimaryDark">#0D2B2B2A</color>
+    <color name="colorPrimaryDarkNavView">#323231</color>
+    <color name="colorAccent">#ff3600</color>
+    <color name="colorDarkRed">#5CFF0000</color>
+    <color name="colorDarkGreen">#7C59FF00</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorGrey">#b1b1b1</color>
+    <color name="colorMatteBlack">#7E000000</color>
+    <color name="colorPlayerBg">#CC000000</color>
+
+    <!-- Added more colors to here -->
+
+
+    <!--
+    Transparent Color Code Important one
+    -->
+
+    <color name="nativeAdColor">#3CC2C2C2</color>
+
+
+
+
+
+
+    <color name="md_blue_50">#E3F2FD</color>
+    <color name="md_blue_100">#BBDEFB</color>
+    <color name="md_blue_200">#90CAF9</color>
+    <color name="md_blue_300">#64B5F6</color>
+    <color name="md_blue_400">#42A5F5</color>
+    <color name="md_blue_500">#2196F3</color>
+    <color name="md_blue_700">#1976D2</color>
+    <color name="md_blue_800">#1565C0</color>
+    <color name="md_blue_900">#0D47A1</color>
+    <color name="md_blue_A100">#82B1FF</color>
+    <color name="md_blue_A200">#448AFF</color>
+    <color name="md_blue_A400">#2979FF</color>
+    <color name="md_blue_A700">#2962FF</color>
+    <color name="errorColor">#D50000</color>
+
+
+    <color name="editor_icon_color">#FC2811</color>
+    <color name="camera_icon_color">#F17A30</color>
+    <color name="studio_icon_color">#0974BB</color>
+    <color name="trim_icon_color">#44A70F</color>
+    <color name="material_icon_color">#8B5EC6</color>
+    <color name="vip_icon_color">#E07100</color>
+    <color name="background_color">#011828</color>
+
+    <color name="m_gray_medium">#ff333333</color>
+    <color name="m_gray_medium_2">#ff555555</color>
+    <color name="m_gray_medium_light">#ff383838</color>
+    <color name="m_gray_medium_lighter">#ff3a3a3a</color>
+    <color name="m_highlight_blue">#880089cc</color>
+    <color name="card_color">#ff263238</color>
+    <color name="card_color_light">#88263238</color>
+    <color name="card_color_very_light">#44263238</color>
+    <color name="m_black_less_than_40_opacity">#60000000</color>
+    <color name="pink">#ffffc0cb</color>
+
+    <color name="m_very_transparent_black">#33000000</color>
+    <color name="m_white">#fff</color>
+    <color name="waveform_selected">#33b5e5</color>
+    <color name="waveform_unselected">#195a72</color>
+    <color name="waveform_unselected_bkgnd_overlay">#0a242d</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+    <color name="grey_fa">#fffafafa</color>
+    <color name="type_bkgnd_alarm">#88880000</color>
+    <color name="type_bkgnd_ringtone">#88008888</color>
+    <color name="type_bkgnd_notification">#88666600</color>
+    <color name="type_bkgnd_music">#88000000</color>
+    <color name="type_bkgnd_unsupported">#88cccccc</color>
+    <color name="dark_bg">#20242e</color>
+    <color name="dark_bg_2">#50000000</color>
+
+
+</resources>
